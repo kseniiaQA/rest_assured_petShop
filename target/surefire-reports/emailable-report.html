@@ -9,16 +9,78 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">28 355</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">28 410</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">create.pet.CreatePetTest</td><td><a href="#m0">testCreatePet</a></td><td rowspan="1">1748956948462</td><td rowspan="1">8273</td></tr><tr class="failedodd"><td rowspan="1">delete.pet.DeletePetTest</td><td><a href="#m1">deletePet</a></td><td rowspan="1">1748956969632</td><td rowspan="1">6431</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">create.pet.CreatePetTest</td><td><a href="#m2">testCreatePet</a></td><td rowspan="2">1748956963171</td><td rowspan="2">6459</td></tr><tr class="passedeven"><td><a href="#m3">testCreatePet</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">create.pet.CreatePetTest</td><td><a href="#m0">testCreatePet</a></td><td rowspan="3">1748957266042</td><td rowspan="3">8344</td></tr><tr class="failedeven"><td><a href="#m1">testCreatePet</a></td></tr><tr class="failedeven"><td><a href="#m2">testCreatePet</a></td></tr><tr class="failedodd"><td rowspan="1">delete.pet.DeletePetTest</td><td><a href="#m3">deletePet</a></td><td rowspan="1">1748957287299</td><td rowspan="1">6406</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=0, name=string), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Url does not match: Lists differ at element [0]: https://petstore.swagger.io/#/ != string expected [https://petstore.swagger.io/#/] but found [string]
+<h2>Surefire test</h2><h3 id="m0">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=0, name=string), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;code&quot; (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: &quot;status&quot;, &quot;path&quot;, &quot;photoUrls&quot;, &quot;error&quot;, &quot;tags&quot;, &quot;id&quot;, &quot;category&quot;, &quot;name&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse[&quot;code&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at rest.model.response.pet.PetValidatableResponse.&lt;init&gt;(PetValidatableResponse.java:17)
+	at rest.client.TestClient.read(TestClient.java:103)
+	at create.pet.CreatePetTest.testCreatePet(CreatePetTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;code&quot; (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: &quot;status&quot;, &quot;path&quot;, &quot;photoUrls&quot;, &quot;error&quot;, &quot;tags&quot;, &quot;id&quot;, &quot;category&quot;, &quot;name&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse[&quot;code&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1793)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1771)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4899)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3846)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 43 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=0, name=string), name=lprfSeNtdUbtEICxKDgkLaNBXuStbVmtHVJgZMTwwvueMDbFWcavmWFAjCutGCdtItYdmysLbIlcNCnfqMjbvlovBAPlQaCyZCwEhjmPjCZyaDMLLIGbYPkvVzMyWeVLbHiXijnCLPXdYRbmUBNwrCocXiDtIeVtrtABfzrAYIwfhqtsjlLViFHONqxWXjqkQFMjgFJdgjzDRaoztbSIIVnQQQfawyRFOQOTqkjFdArvfOSlgLYeSwcFoTzayZwKm, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Url does not match: Lists differ at element [0]: https://petstore.swagger.io/#/ != string expected [https://petstore.swagger.io/#/] but found [string]
 	at rest.model.response.pet.PetValidatableResponse.checkPet(PetValidatableResponse.java:32)
 	at create.pet.CreatePetTest.testCreatePet(CreatePetTest.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">delete.pet.DeletePetTest#deletePet</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.
+<h3 id="m2">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=2, name=Alabai), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;code&quot; (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: &quot;status&quot;, &quot;path&quot;, &quot;photoUrls&quot;, &quot;error&quot;, &quot;tags&quot;, &quot;id&quot;, &quot;category&quot;, &quot;name&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse[&quot;code&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at rest.model.response.pet.PetValidatableResponse.&lt;init&gt;(PetValidatableResponse.java:17)
+	at rest.client.TestClient.read(TestClient.java:103)
+	at create.pet.CreatePetTest.testCreatePet(CreatePetTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;code&quot; (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: &quot;status&quot;, &quot;path&quot;, &quot;photoUrls&quot;, &quot;error&quot;, &quot;tags&quot;, &quot;id&quot;, &quot;category&quot;, &quot;name&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse[&quot;code&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1793)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1771)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4899)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3846)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 43 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">delete.pet.DeletePetTest#deletePet</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.
 Try registering a default parser using:
    RestAssured.defaultParser(&lt;parser type&gt;);
 Content was:
@@ -58,7 +120,5 @@ Content was:
 	at delete.pet.DeletePetTest.deletePet(DeletePetTest.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=0, name=string), name=RyclCNmJYBCJRjzDxCAIXxJCZCZvshjLjJKFlqfuzADwxPXAEJJPdNbcfvJIeDUSBaeEhSrnqXKDIZscHEoAjwfNoXkicBbePyKedpKImBDKpGxxmSruWmYBCqSwefMXPHDXKfCPQuGNwPKjgzwUvplbsflHzCknarQUqcZTRfeKGncjCVsJVXPNWPrNawlGxtUGumiirNytXdoikbKbWungFVqrGNNQaDlbKiUviezEiqmYkaZOTrtJqBlxMdgqw, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=2, name=Alabai), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -42,7 +42,7 @@ public class Pet {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class Tag {
-        private Integer id;
+        private long id;
         private String name;
     }
 
@@ -50,7 +50,7 @@ public class Pet {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class Category {
-        private Integer id;
+        private long id;
         private String name;
     }
 }

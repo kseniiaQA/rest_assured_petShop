@@ -3,7 +3,6 @@ package rest.model.response.order;
 import lombok.*;
 import lombok.experimental.Accessors;
 import rest.model.request.Order;
-
 import java.time.OffsetDateTime;
 
 

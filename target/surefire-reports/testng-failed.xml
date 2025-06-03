@@ -5,7 +5,7 @@
     <classes>
       <class name="create.pet.CreatePetTest">
         <methods>
-          <include name="testCreatePet" invocation-numbers="0"/>
+          <include name="testCreatePet" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- create.pet.CreatePetTest -->
       <class name="delete.pet.DeletePetTest">

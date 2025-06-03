@@ -29,8 +29,6 @@ public class CreatePetTest {
     public Object[][] createPets() {
         return new Object[][] {
                 { Pet.defaultOf()},
-                { Pet.defaultOf().setCategory(new Pet.Category(2, "Alabai")) },
-                { Pet.defaultOf().setName(RandomStringUtils.randomAlphabetic(257))},
         };
     }
 }

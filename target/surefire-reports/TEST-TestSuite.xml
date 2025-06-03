@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="28.726" tests="4" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="28.871" tests="4" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
-    <property name="sun.java.command" value="C:\Users\kalekseenko\AppData\Local\Temp\surefire9708902021071922344\surefirebooter-20250603162224981_3.jar C:\Users\kalekseenko\AppData\Local\Temp\surefire9708902021071922344 2025-06-03T16-22-24_447-jvmRun1 surefire-20250603162224981_1tmp surefire_0-20250603162224981_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\kalekseenko\AppData\Local\Temp\surefire16595731106916511272\surefirebooter-20250603162745211_3.jar C:\Users\kalekseenko\AppData\Local\Temp\surefire16595731106916511272 2025-06-03T16-27-45_071-jvmRun1 surefire-20250603162745211_1tmp surefire_0-20250603162745211_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\kalekseenko\RestAssuredPetShop\target\test-classes;C:\Users\kalekseenko\RestAssuredPetShop\target\classes;C:\Users\kalekseenko\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\kalekseenko\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\kalekseenko\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\kalekseenko\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\kalekseenko\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\kalekseenko\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\kalekseenko\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\kalekseenko\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\kalekseenko\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\kalekseenko\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\kalekseenko\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\kalekseenko\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\kalekseenko\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\kalekseenko\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\kalekseenko\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\kalekseenko\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\kalekseenko\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\kalekseenko\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\kalekseenko\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\kalekseenko\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\kalekseenko\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\kalekseenko\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\kalekseenko\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\kalekseenko\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.16.1\jackson-datatype-jsr310-2.16.1.jar;C:\Users\kalekseenko\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kalekseenko\AppData\Local\Temp\surefire9708902021071922344\surefirebooter-20250603162224981_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kalekseenko\AppData\Local\Temp\surefire16595731106916511272\surefirebooter-20250603162745211_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.2+9-78"/>
@@ -58,7 +58,315 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="testCreatePet[Pet(id=0, category=Pet.Category(id=0, name=string), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)](1)" classname="create.pet.CreatePetTest" time="8.262">
+  <testcase name="testCreatePet[Pet(id=0, category=Pet.Category(id=0, name=string), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)](1)" classname="create.pet.CreatePetTest" time="8.341">
+    <failure message="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;code&quot; (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: &quot;status&quot;, &quot;path&quot;, &quot;photoUrls&quot;, &quot;error&quot;, &quot;tags&quot;, &quot;id&quot;, &quot;category&quot;, &quot;name&quot;])&#10; at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse[&quot;code&quot;])" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "code" (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: "status", "path", "photoUrls", "error", "tags", "id", "category", "name"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse["code"])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at rest.model.response.pet.PetValidatableResponse.<init>(PetValidatableResponse.java:17)
+	at rest.client.TestClient.read(TestClient.java:103)
+	at create.pet.CreatePetTest.testCreatePet(CreatePetTest.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "code" (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: "status", "path", "photoUrls", "error", "tags", "id", "category", "name"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse["code"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1793)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1771)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4899)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3846)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 43 more
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "category": {
+        "id": 0,
+        "name": "string"
+    },
+    "name": "doggie",
+    "photoUrls": [
+        "https://petstore.swagger.io/#/"
+    ],
+    "tags": [
+        {
+            "id": 0,
+            "name": "string"
+        }
+    ],
+    "status": "available"
+}
+Response Status Code: 200
+Response Body: {"id":9223372036854759063,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["https://petstore.swagger.io/#/"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+HTTP/1.1 200 OK
+Date: Tue, 03 Jun 2025 13:27:48 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 9223372036854759063,
+    "category": {
+        "id": 0,
+        "name": "string"
+    },
+    "name": "doggie",
+    "photoUrls": [
+        "https://petstore.swagger.io/#/"
+    ],
+    "tags": [
+        {
+            "id": 0,
+            "name": "string"
+        }
+    ],
+    "status": "available"
+}
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/9223372036854759063
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Jun 2025 13:27:54 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testCreatePet[Pet(id=0, category=Pet.Category(id=2, name=Alabai), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)](2)" classname="create.pet.CreatePetTest" time="6.426">
+    <failure message="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;code&quot; (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: &quot;status&quot;, &quot;path&quot;, &quot;photoUrls&quot;, &quot;error&quot;, &quot;tags&quot;, &quot;id&quot;, &quot;category&quot;, &quot;name&quot;])&#10; at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse[&quot;code&quot;])" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "code" (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: "status", "path", "photoUrls", "error", "tags", "id", "category", "name"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse["code"])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at rest.model.response.pet.PetValidatableResponse.<init>(PetValidatableResponse.java:17)
+	at rest.client.TestClient.read(TestClient.java:103)
+	at create.pet.CreatePetTest.testCreatePet(CreatePetTest.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "code" (class rest.model.response.pet.PetResponse), not marked as ignorable (8 known properties: "status", "path", "photoUrls", "error", "tags", "id", "category", "name"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10] (through reference chain: rest.model.response.pet.PetResponse["code"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1793)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1771)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4899)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3846)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 43 more
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "category": {
+        "id": 2,
+        "name": "Alabai"
+    },
+    "name": "doggie",
+    "photoUrls": [
+        "https://petstore.swagger.io/#/"
+    ],
+    "tags": [
+        {
+            "id": 0,
+            "name": "string"
+        }
+    ],
+    "status": "available"
+}
+Response Status Code: 200
+Response Body: {"id":9223372036854759066,"category":{"id":2,"name":"Alabai"},"name":"doggie","photoUrls":["https://petstore.swagger.io/#/"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+HTTP/1.1 200 OK
+Date: Tue, 03 Jun 2025 13:27:55 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 9223372036854759066,
+    "category": {
+        "id": 2,
+        "name": "Alabai"
+    },
+    "name": "doggie",
+    "photoUrls": [
+        "https://petstore.swagger.io/#/"
+    ],
+    "tags": [
+        {
+            "id": 0,
+            "name": "string"
+        }
+    ],
+    "status": "available"
+}
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/9223372036854759066
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Jun 2025 13:28:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatePet[Pet(id=0, category=Pet.Category(id=0, name=string), name=lprfSeNtdUbtEICxKDgkLaNBXuStbVmtHVJgZMTwwvueMDbFWcavmWFAjCutGCdtItYdmysLbIlcNCnfqMjbvlovBAPlQaCyZCwEhjmPjCZyaDMLLIGbYPkvVzMyWeVLbHiXijnCLPXdYRbmUBNwrCocXiDtIeVtrtABfzrAYIwfhqtsjlLViFHONqxWXjqkQFMjgFJdgjzDRaoztbSIIVnQQQfawyRFOQOTqkjFdArvfOSlgLYeSwcFoTzayZwKm, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)](3)" classname="create.pet.CreatePetTest" time="6.467">
     <failure message="Url does not match: Lists differ at element [0]: https://petstore.swagger.io/#/ != string expected [https://petstore.swagger.io/#/] but found [string]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Url does not match: Lists differ at element [0]: https://petstore.swagger.io/#/ != string expected [https://petstore.swagger.io/#/] but found [string]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -116,7 +424,7 @@ Body:
         "id": 0,
         "name": "string"
     },
-    "name": "doggie",
+    "name": "lprfSeNtdUbtEICxKDgkLaNBXuStbVmtHVJgZMTwwvueMDbFWcavmWFAjCutGCdtItYdmysLbIlcNCnfqMjbvlovBAPlQaCyZCwEhjmPjCZyaDMLLIGbYPkvVzMyWeVLbHiXijnCLPXdYRbmUBNwrCocXiDtIeVtrtABfzrAYIwfhqtsjlLViFHONqxWXjqkQFMjgFJdgjzDRaoztbSIIVnQQQfawyRFOQOTqkjFdArvfOSlgLYeSwcFoTzayZwKm",
     "photoUrls": [
         "https://petstore.swagger.io/#/"
     ],
@@ -129,9 +437,9 @@ Body:
     "status": "available"
 }
 Response Status Code: 200
-Response Body: {"id":9223372036854758996,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["https://petstore.swagger.io/#/"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+Response Body: {"id":9223372036854759037,"category":{"id":0,"name":"string"},"name":"lprfSeNtdUbtEICxKDgkLaNBXuStbVmtHVJgZMTwwvueMDbFWcavmWFAjCutGCdtItYdmysLbIlcNCnfqMjbvlovBAPlQaCyZCwEhjmPjCZyaDMLLIGbYPkvVzMyWeVLbHiXijnCLPXdYRbmUBNwrCocXiDtIeVtrtABfzrAYIwfhqtsjlLViFHONqxWXjqkQFMjgFJdgjzDRaoztbSIIVnQQQfawyRFOQOTqkjFdArvfOSlgLYeSwcFoTzayZwKm","photoUrls":["https://petstore.swagger.io/#/"],"tags":[{"id":0,"name":"string"}],"status":"available"}
 HTTP/1.1 200 OK
-Date: Tue, 03 Jun 2025 13:22:30 GMT
+Date: Tue, 03 Jun 2025 13:28:01 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -141,12 +449,12 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372036854758996,
+    "id": 9223372036854759037,
     "category": {
         "id": 0,
         "name": "string"
     },
-    "name": "doggie",
+    "name": "lprfSeNtdUbtEICxKDgkLaNBXuStbVmtHVJgZMTwwvueMDbFWcavmWFAjCutGCdtItYdmysLbIlcNCnfqMjbvlovBAPlQaCyZCwEhjmPjCZyaDMLLIGbYPkvVzMyWeVLbHiXijnCLPXdYRbmUBNwrCocXiDtIeVtrtABfzrAYIwfhqtsjlLViFHONqxWXjqkQFMjgFJdgjzDRaoztbSIIVnQQQfawyRFOQOTqkjFdArvfOSlgLYeSwcFoTzayZwKm",
     "photoUrls": [
         "https://petstore.swagger.io/#/"
     ],
@@ -159,7 +467,7 @@ Server: Jetty(9.2.9.v20150224)
     "status": "available"
 }
 Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/pet/9223372036854758996
+Request URI:	https://petstore.swagger.io/v2/pet/9223372036854759037
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -171,7 +479,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 03 Jun 2025 13:22:36 GMT
+Date: Tue, 03 Jun 2025 13:28:07 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -181,7 +489,7 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372036854758996,
+    "id": 9223372036854759037,
     "category": {
         "id": 0,
         "name": "string"
@@ -199,218 +507,8 @@ Server: Jetty(9.2.9.v20150224)
     "status": "string"
 }
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-]]></system-err>
   </testcase>
-  <testcase name="testCreatePet[Pet(id=0, category=Pet.Category(id=2, name=Alabai), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)](2)" classname="create.pet.CreatePetTest" time="6.431">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet/
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 0,
-    "category": {
-        "id": 2,
-        "name": "Alabai"
-    },
-    "name": "doggie",
-    "photoUrls": [
-        "https://petstore.swagger.io/#/"
-    ],
-    "tags": [
-        {
-            "id": 0,
-            "name": "string"
-        }
-    ],
-    "status": "available"
-}
-Response Status Code: 200
-Response Body: {"id":9223372036854758999,"category":{"id":2,"name":"Alabai"},"name":"doggie","photoUrls":["https://petstore.swagger.io/#/"],"tags":[{"id":0,"name":"string"}],"status":"available"}
-HTTP/1.1 200 OK
-Date: Tue, 03 Jun 2025 13:22:37 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-Server: Jetty(9.2.9.v20150224)
-
-{
-    "id": 9223372036854758999,
-    "category": {
-        "id": 2,
-        "name": "Alabai"
-    },
-    "name": "doggie",
-    "photoUrls": [
-        "https://petstore.swagger.io/#/"
-    ],
-    "tags": [
-        {
-            "id": 0,
-            "name": "string"
-        }
-    ],
-    "status": "available"
-}
-Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/pet/9223372036854758999
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Tue, 03 Jun 2025 13:22:43 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-Server: Jetty(9.2.9.v20150224)
-
-{
-    "id": 9223372036854758999,
-    "category": {
-        "id": 2,
-        "name": "Alabai"
-    },
-    "name": "doggie",
-    "photoUrls": [
-        "https://petstore.swagger.io/#/"
-    ],
-    "tags": [
-        {
-            "id": 0,
-            "name": "string"
-        }
-    ],
-    "status": "available"
-}
-]]></system-out>
-  </testcase>
-  <testcase name="testCreatePet[Pet(id=0, category=Pet.Category(id=0, name=string), name=RyclCNmJYBCJRjzDxCAIXxJCZCZvshjLjJKFlqfuzADwxPXAEJJPdNbcfvJIeDUSBaeEhSrnqXKDIZscHEoAjwfNoXkicBbePyKedpKImBDKpGxxmSruWmYBCqSwefMXPHDXKfCPQuGNwPKjgzwUvplbsflHzCknarQUqcZTRfeKGncjCVsJVXPNWPrNawlGxtUGumiirNytXdoikbKbWungFVqrGNNQaDlbKiUviezEiqmYkaZOTrtJqBlxMdgqw, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)](3)" classname="create.pet.CreatePetTest" time="6.458">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet/
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 0,
-    "category": {
-        "id": 0,
-        "name": "string"
-    },
-    "name": "RyclCNmJYBCJRjzDxCAIXxJCZCZvshjLjJKFlqfuzADwxPXAEJJPdNbcfvJIeDUSBaeEhSrnqXKDIZscHEoAjwfNoXkicBbePyKedpKImBDKpGxxmSruWmYBCqSwefMXPHDXKfCPQuGNwPKjgzwUvplbsflHzCknarQUqcZTRfeKGncjCVsJVXPNWPrNawlGxtUGumiirNytXdoikbKbWungFVqrGNNQaDlbKiUviezEiqmYkaZOTrtJqBlxMdgqw",
-    "photoUrls": [
-        "https://petstore.swagger.io/#/"
-    ],
-    "tags": [
-        {
-            "id": 0,
-            "name": "string"
-        }
-    ],
-    "status": "available"
-}
-Response Status Code: 200
-Response Body: {"id":9223372036854759027,"category":{"id":0,"name":"string"},"name":"RyclCNmJYBCJRjzDxCAIXxJCZCZvshjLjJKFlqfuzADwxPXAEJJPdNbcfvJIeDUSBaeEhSrnqXKDIZscHEoAjwfNoXkicBbePyKedpKImBDKpGxxmSruWmYBCqSwefMXPHDXKfCPQuGNwPKjgzwUvplbsflHzCknarQUqcZTRfeKGncjCVsJVXPNWPrNawlGxtUGumiirNytXdoikbKbWungFVqrGNNQaDlbKiUviezEiqmYkaZOTrtJqBlxMdgqw","photoUrls":["https://petstore.swagger.io/#/"],"tags":[{"id":0,"name":"string"}],"status":"available"}
-HTTP/1.1 200 OK
-Date: Tue, 03 Jun 2025 13:22:43 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-Server: Jetty(9.2.9.v20150224)
-
-{
-    "id": 9223372036854759027,
-    "category": {
-        "id": 0,
-        "name": "string"
-    },
-    "name": "RyclCNmJYBCJRjzDxCAIXxJCZCZvshjLjJKFlqfuzADwxPXAEJJPdNbcfvJIeDUSBaeEhSrnqXKDIZscHEoAjwfNoXkicBbePyKedpKImBDKpGxxmSruWmYBCqSwefMXPHDXKfCPQuGNwPKjgzwUvplbsflHzCknarQUqcZTRfeKGncjCVsJVXPNWPrNawlGxtUGumiirNytXdoikbKbWungFVqrGNNQaDlbKiUviezEiqmYkaZOTrtJqBlxMdgqw",
-    "photoUrls": [
-        "https://petstore.swagger.io/#/"
-    ],
-    "tags": [
-        {
-            "id": 0,
-            "name": "string"
-        }
-    ],
-    "status": "available"
-}
-Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/pet/9223372036854759027
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Tue, 03 Jun 2025 13:22:49 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-Server: Jetty(9.2.9.v20150224)
-
-{
-    "id": 9223372036854759027,
-    "category": {
-        "id": 0,
-        "name": "string"
-    },
-    "name": "RyclCNmJYBCJRjzDxCAIXxJCZCZvshjLjJKFlqfuzADwxPXAEJJPdNbcfvJIeDUSBaeEhSrnqXKDIZscHEoAjwfNoXkicBbePyKedpKImBDKpGxxmSruWmYBCqSwefMXPHDXKfCPQuGNwPKjgzwUvplbsflHzCknarQUqcZTRfeKGncjCVsJVXPNWPrNawlGxtUGumiirNytXdoikbKbWungFVqrGNNQaDlbKiUviezEiqmYkaZOTrtJqBlxMdgqw",
-    "photoUrls": [
-        "https://petstore.swagger.io/#/"
-    ],
-    "tags": [
-        {
-            "id": 0,
-            "name": "string"
-        }
-    ],
-    "status": "available"
-}
-]]></system-out>
-  </testcase>
-  <testcase name="deletePet" classname="delete.pet.DeletePetTest" time="6.433">
+  <testcase name="deletePet" classname="delete.pet.DeletePetTest" time="6.408">
     <failure message="Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.&#10;Try registering a default parser using:&#10;   RestAssured.defaultParser(&lt;parser type&gt;);&#10;Content was:&#10;&#10;" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: 
 Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.
 Try registering a default parser using:
@@ -520,9 +618,9 @@ Body:
     "status": "available"
 }
 Response Status Code: 200
-Response Body: {"id":9223372036854759028,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["https://petstore.swagger.io/#/"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+Response Body: {"id":9223372036854759067,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["https://petstore.swagger.io/#/"],"tags":[{"id":0,"name":"string"}],"status":"available"}
 HTTP/1.1 200 OK
-Date: Tue, 03 Jun 2025 13:22:50 GMT
+Date: Tue, 03 Jun 2025 13:28:07 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -532,7 +630,7 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372036854759028,
+    "id": 9223372036854759067,
     "category": {
         "id": 0,
         "name": "string"
@@ -550,7 +648,7 @@ Server: Jetty(9.2.9.v20150224)
     "status": "available"
 }
 Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/pet/9223372036854759028
+Request URI:	https://petstore.swagger.io/v2/pet/9223372036854759067
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -562,7 +660,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 Not Found
-Date: Tue, 03 Jun 2025 13:22:56 GMT
+Date: Tue, 03 Jun 2025 13:28:13 GMT
 Content-Length: 0
 Connection: keep-alive
 Access-Control-Allow-Origin: *

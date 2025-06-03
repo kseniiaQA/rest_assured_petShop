@@ -1,9 +1,7 @@
 package rest.model.response.pet;
 
-
 import lombok.*;
 import lombok.experimental.Accessors;
-
 import java.time.OffsetDateTime;
 
 @Accessors(chain = true)
