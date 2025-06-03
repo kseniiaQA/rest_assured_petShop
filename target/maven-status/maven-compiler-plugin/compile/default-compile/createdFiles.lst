@@ -1,0 +1,14 @@
+rest\model\request\Pet.class
+rest\model\response\pet\ErrorResponse.class
+props\Configuration.class
+rest\model\request\Order.class
+rest\model\response\pet\PetResponse.class
+rest\model\response\pet\UploadImageResponse.class
+rest\model\request\Pet$Tag.class
+rest\model\response\pet\DeletePetResponse.class
+rest\model\response\order\OrderResponse.class
+rest\model\response\pet\PetValidatableResponse.class
+rest\model\request\Pet$Category.class
+rest\model\response\order\OrderValidatableResponse.class
+props\TestConfig.class
+rest\client\TestClient.class

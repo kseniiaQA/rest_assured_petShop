@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">28 355</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">create.pet.CreatePetTest</td><td><a href="#m0">testCreatePet</a></td><td rowspan="1">1748956948462</td><td rowspan="1">8273</td></tr><tr class="failedodd"><td rowspan="1">delete.pet.DeletePetTest</td><td><a href="#m1">deletePet</a></td><td rowspan="1">1748956969632</td><td rowspan="1">6431</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">create.pet.CreatePetTest</td><td><a href="#m2">testCreatePet</a></td><td rowspan="2">1748956963171</td><td rowspan="2">6459</td></tr><tr class="passedeven"><td><a href="#m3">testCreatePet</a></td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=0, name=string), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Url does not match: Lists differ at element [0]: https://petstore.swagger.io/#/ != string expected [https://petstore.swagger.io/#/] but found [string]
+	at rest.model.response.pet.PetValidatableResponse.checkPet(PetValidatableResponse.java:32)
+	at create.pet.CreatePetTest.testCreatePet(CreatePetTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">delete.pet.DeletePetTest#deletePet</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: Expected response body to be verified as JSON, HTML or XML but no content-type was defined in the response.
+Try registering a default parser using:
+   RestAssured.defaultParser(&lt;parser type&gt;);
+Content was:
+
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.assertion.StreamVerifier.newAssertion(StreamVerifier.groovy:43)
+	at io.restassured.internal.assertion.BodyMatcher.validate(BodyMatcher.java:93)
+	at io.restassured.internal.assertion.BodyMatcherGroup.lambda$validate$0(BodyMatcherGroup.java:30)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at io.restassured.internal.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.java:30)
+	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at rest.client.TestClient.delete(TestClient.java:119)
+	at delete.pet.DeletePetTest.deletePet(DeletePetTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=0, name=string), name=RyclCNmJYBCJRjzDxCAIXxJCZCZvshjLjJKFlqfuzADwxPXAEJJPdNbcfvJIeDUSBaeEhSrnqXKDIZscHEoAjwfNoXkicBbePyKedpKImBDKpGxxmSruWmYBCqSwefMXPHDXKfCPQuGNwPKjgzwUvplbsflHzCknarQUqcZTRfeKGncjCVsJVXPNWPrNawlGxtUGumiirNytXdoikbKbWungFVqrGNNQaDlbKiUviezEiqmYkaZOTrtJqBlxMdgqw, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">create.pet.CreatePetTest#testCreatePet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Pet(id=0, category=Pet.Category(id=2, name=Alabai), name=doggie, photoUrls=[https://petstore.swagger.io/#/], tags=[Pet.Tag(id=0, name=string)], status=available)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

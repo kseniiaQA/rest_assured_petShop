@@ -14,6 +14,7 @@ public class DeletePetTest extends PetStoreTestBase {
         long petId = response.getId();
         Thread.sleep(5000);
         testClient.delete(petId, "unknown");
+        Thread.sleep(5000);
         testClient.read(petId)
                 .checkStatusCode(200);
     }

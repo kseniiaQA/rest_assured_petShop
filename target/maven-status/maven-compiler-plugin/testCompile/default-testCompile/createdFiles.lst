@@ -1,0 +1,7 @@
+create\pet\PetData.class
+create\pet\PetStoreTestBase.class
+create\pet\CreatePetTest.class
+update\pet\UpdatePetTest.class
+update\pet\UploadImageForPet.class
+delete\pet\DeletePetTest.class
+shop\CreateOrder.class
