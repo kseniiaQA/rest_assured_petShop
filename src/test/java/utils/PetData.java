@@ -1,6 +1,5 @@
-package create.pet;
+package utils;
 import org.testng.annotations.DataProvider;
-
 
 
 public class PetData {

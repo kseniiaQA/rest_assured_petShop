@@ -1,4 +1,4 @@
-package rest.model.request;
+package rest.model.request.order;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

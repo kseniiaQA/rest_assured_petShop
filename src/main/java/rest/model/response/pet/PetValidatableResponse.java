@@ -3,18 +3,19 @@ package rest.model.response.pet;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.testng.Assert;
-import rest.model.request.Pet;
+import rest.model.request.pet.PetOrder;
 
 
 public class PetValidatableResponse {
 
-    private PetResponse model;
+    private PetOrderResponse model;
     private Response response;
+
 
     public PetValidatableResponse(Response response) {
         this.response = response;
         if (response.asString().length() > 0) {
-            model = response.as(PetResponse.class);
+            model = response.as(PetOrderResponse.class);
         }
     }
 
@@ -28,10 +29,11 @@ public class PetValidatableResponse {
         return this;
     }
 
-    public PetValidatableResponse checkPet(Pet expected) {
+    public PetValidatableResponse checkPet(PetOrder expected) {
         Assert.assertEquals(model.getPhotoUrls(), expected.getPhotoUrls(), "Url does not match");
         Assert.assertEquals(model.getName(), expected.getName(), "Name does not match");
         Assert.assertEquals(model.getCategory(), expected.getCategory(), "Category does not match");
+        Assert.assertEquals(model.getStatus(), expected.getStatus(), "Name does not match");
         return this;
     }
 
@@ -40,7 +42,7 @@ public class PetValidatableResponse {
         return this;
     }
 
-    public PetValidatableResponse checkErrorResponse(PetResponse expected) {
+    public PetValidatableResponse checkErrorResponse(PetOrderResponse expected) {
         response.then().body("timestamp", Matchers.notNullValue());
         Assert.assertEquals(model.getError(), expected.getError(), "Error message does not match");
         Assert.assertEquals(model.getPath(), expected.getPath(), "Path does not match");

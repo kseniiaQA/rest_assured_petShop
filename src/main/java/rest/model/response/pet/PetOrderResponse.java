@@ -1,10 +1,8 @@
-package rest.model.response.order;
+package rest.model.response.pet;
 
 import lombok.*;
 import lombok.experimental.Accessors;
-import rest.model.request.order.Order;
-import java.time.OffsetDateTime;
-
+import rest.model.request.pet.PetOrder;
 
 @Accessors(chain = true)
 @Setter
@@ -13,15 +11,13 @@ import java.time.OffsetDateTime;
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderResponse extends Order {
+public class PetOrderResponse extends PetOrder {
 
     private long id;
-    private long petId;
 
     @EqualsAndHashCode.Exclude
-    private int quantity;
-    private OffsetDateTime shipDate;
     private String status;
-    private boolean complete;
+    private String error;
+    private String path;
 
 }

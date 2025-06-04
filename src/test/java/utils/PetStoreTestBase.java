@@ -1,4 +1,4 @@
-package create.pet;
+package utils;
 
 import rest.client.TestClient;
 

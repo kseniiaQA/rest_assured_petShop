@@ -3,7 +3,7 @@ package rest.model.response.order;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.testng.Assert;
-import rest.model.request.Order;
+import rest.model.request.order.Order;
 
 public class OrderValidatableResponse {
 
@@ -17,7 +17,6 @@ public class OrderValidatableResponse {
             model = response.as(OrderResponse.class);
         }
     }
-
 
     public OrderValidatableResponse checkStatusCode(int statusCode) {
         response.then().statusCode(statusCode);

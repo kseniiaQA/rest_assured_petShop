@@ -1,4 +1,4 @@
-package rest.model.request;
+package rest.model.request.pet;
 
 import lombok.*;
 import lombok.experimental.Accessors;
@@ -8,7 +8,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Pet {
+public class PetOrder {
 
     private long id;
     private Category category;
@@ -17,17 +17,19 @@ public class Pet {
     private List<Tag> tags;
     private String status;
 
-    public Pet(Pet pet) {
-        this.id = pet.id;
-        this.category = pet.category;
-        this.name = pet.name;
-        this.photoUrls = pet.photoUrls;
-        this.tags = pet.tags;
-        this.status = pet.status;
+    public PetOrder(PetOrder petOrder) {
+        this.id = petOrder.id;
+        this.category = petOrder.category;
+        this.name = petOrder.name;
+        this.photoUrls = petOrder.photoUrls;
+        this.tags = petOrder.tags;
+        this.status = petOrder.status;
     }
 
-    public static Pet defaultOf() {
-        return new Pet(
+
+
+    public static PetOrder defaultOf() {
+        return new PetOrder(
                 0,
                 new Category(0, "string"),
                 "doggie",

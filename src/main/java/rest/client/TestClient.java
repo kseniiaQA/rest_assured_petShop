@@ -1,25 +1,32 @@
 package rest.client;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.parsing.Parser;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import lombok.AllArgsConstructor;
 import props.TestConfig;
-import rest.model.request.Order;
-import rest.model.request.Pet;
-import rest.model.response.pet.DeletePetResponse;
+import rest.model.request.order.Order;
+import rest.model.request.pet.PetOrder;
+import rest.model.request.pet.PetUpdateRequest;
 import rest.model.response.order.OrderValidatableResponse;
+import rest.model.response.pet.DeletedPetValidatableResponse;
 import rest.model.response.pet.PetValidatableResponse;
 import rest.model.response.pet.UploadImageResponse;
 
 
 import java.io.File;
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+
 
 @AllArgsConstructor
 public class TestClient {
+
+    static {
+        // Устанавливаем JSON парсер по умолчанию
+        RestAssured.defaultParser = Parser.JSON;
+    }
 
     private String baseUri;
     private String basePath;
@@ -29,6 +36,7 @@ public class TestClient {
     }
 
     private RequestSpecification getRequestSpec() {
+        RestAssured.useRelaxedHTTPSValidation();
         return given()
                 .baseUri(baseUri)
                 .basePath(basePath)
@@ -42,9 +50,23 @@ public class TestClient {
                 body(body);
     }
 
-    public PetValidatableResponse create(Pet pet) {
-        Response response = getRequestSpec(pet).when()
-                .post("/pet/");
+    private RequestSpecification getRequestSpecForUpdate() {
+        RestAssured.useRelaxedHTTPSValidation();
+        return RestAssured.given()
+                .noContentType()
+                .baseUri(baseUri)
+                .basePath(basePath)
+                .log().all(); // Логируем все запросы
+    }
+
+    private RequestSpecification getRequestSpecForUpdate(Object body) {
+        return getRequestSpecForUpdate()
+                .body(body); // Устанавливаем тело запроса
+    }
+
+    public PetValidatableResponse create(PetOrder petOrder) {
+        Response response = getRequestSpec(petOrder).when()
+                .post("/petOrder/");
 
         // Логируем статус и тело ответа для диагностики
         System.out.println("Response Status Code: " + response.getStatusCode());
@@ -75,9 +97,9 @@ public class TestClient {
         return new OrderValidatableResponse(response);
     }
 
-    public PetValidatableResponse update(long id, Pet Pet) {
-        Response response = getRequestSpec(Pet).when().
-                post("/pet/{id}", id);
+    public PetValidatableResponse update(long id, PetUpdateRequest petUpdateRequest) {
+        Response response = getRequestSpecForUpdate(petUpdateRequest).when()
+                .post("/pet/{id}", id);
         response.then().log().all();
         return new PetValidatableResponse(response);
     }
@@ -90,8 +112,7 @@ public class TestClient {
                 .post("/pet/{petId}/uploadImage", petId);
 
         response.then().log().all()
-                .statusCode(200); // или другой код, если ожидается другой
-
+                .statusCode(200);
         return response.as(UploadImageResponse.class);
     }
 
@@ -103,6 +124,15 @@ public class TestClient {
         return new PetValidatableResponse(response);
     }
 
+    public DeletedPetValidatableResponse readDeletedPet(long id) {
+        Response response = getRequestSpec().when().
+                get("/pet/{id}", id);
+
+        response.then().log().all();
+        return new DeletedPetValidatableResponse(response);
+    }
+
+
     public OrderValidatableResponse readOrder(long id) {
         Response response = getRequestSpec().when().
                 get("store/order/{id}", id);
@@ -111,13 +141,20 @@ public class TestClient {
         return new OrderValidatableResponse(response);
     }
 
-    public DeletePetResponse delete(long id, String expectedType) {
-        Response response = getRequestSpec()
+
+    public void delete(long id) {
+        Response getResponse = getRequestSpec()
+                .when()
+                .get("/pet/{id}", id);
+
+        if (getResponse.getStatusCode() == 404) {
+            throw new IllegalArgumentException("PetOrder not found with id: " + id);
+        }
+        Response deleteResponse = getRequestSpec()
                 .when()
                 .delete("/pet/{id}", id);
-        response.then().log().all()
-                .body("type", equalTo(expectedType));
-        DeletePetResponse apiResponse = response.as(DeletePetResponse.class);
-        return apiResponse;
+        if (deleteResponse.getStatusCode() != 200) {
+            throw new RuntimeException("Failed to delete pet: " + deleteResponse.getBody().asString());
+        }
     }
 }

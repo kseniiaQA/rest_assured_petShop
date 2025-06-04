@@ -1,12 +1,12 @@
 package shop;
 
-import create.pet.PetStoreTestBase;
+import utils.PetStoreTestBase;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import rest.client.TestClient;
-import rest.model.request.Order;
-import rest.model.request.Pet;
+import rest.model.request.order.Order;
+import rest.model.request.pet.PetOrder;
 import rest.model.response.order.OrderValidatableResponse;
 
 
@@ -16,7 +16,7 @@ public class CreateOrder extends PetStoreTestBase {
 
     @BeforeClass
     public void setUp() {
-        id = testClient.create(Pet.defaultOf())
+        id = testClient.create(PetOrder.defaultOf())
                 .checkStatusCode(200)
                 .getId();
     }
