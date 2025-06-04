@@ -1,7 +1,11 @@
-create\pet\PetData.class
-create\pet\PetStoreTestBase.class
-create\pet\CreatePetTest.class
-update\pet\UpdatePetTest.class
-update\pet\UploadImageForPet.class
-delete\pet\DeletePetTest.class
+update\UploadImageForPetCreate.class
+utils\PetStoreTestBase.class
+create\CreatePet.class
+create\CreateUser.class
+update\UpdatesPetWithPutMethod.class
+delete\DeletePet.class
+delete\DeleteOrder.class
+delete\DeleteUser.class
 shop\CreateOrder.class
+utils\PetData.class
+update\UpdatePetWithPostMethod.class

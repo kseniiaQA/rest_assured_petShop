@@ -4,7 +4,6 @@ import lombok.*;
 import lombok.experimental.Accessors;
 import rest.model.request.pet.PetCreate;
 
-
 @Accessors(chain = true)
 @Setter
 @Getter
@@ -18,8 +17,6 @@ public class DeletePetResponseCreate extends PetCreate {
     private int code;
     private String type;
     private String message;
-
-
 }
 
 

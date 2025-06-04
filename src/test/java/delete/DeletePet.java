@@ -1,6 +1,5 @@
 package delete;
 
-import io.restassured.response.Response;
 import rest.model.request.pet.PetCreate;
 import rest.model.response.pet.DeletedPetValidatableResponse;
 import utils.PetStoreTestBase;
@@ -31,8 +30,10 @@ public class DeletePet extends PetStoreTestBase {
     }
     @Test
     public void deletePetNegative() throws InterruptedException {
+        DeletedPetValidatableResponse resp = null;
         try {
             testClient.deletePet(0);
+            resp.checkStatusCode(404);
             fail("Ожидалось исключение IllegalArgumentException");
         } catch (IllegalArgumentException e) {
             assertEquals("PetCreate not found with id: 0", e.getMessage());

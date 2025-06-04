@@ -1,7 +1,11 @@
-C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\create\pet\PetData.java
-C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\update\pet\UpdatePetTest.java
 C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\shop\CreateOrder.java
-C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\delete\pet\DeletePetTest.java
-C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\create\pet\CreatePetTest.java
-C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\create\pet\PetStoreTestBase.java
-C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\update\pet\UploadImageForPet.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\update\UpdatesPetWithPutMethod.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\delete\DeleteUser.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\delete\DeletePet.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\delete\DeleteOrder.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\update\UpdatePetWithPostMethod.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\update\UploadImageForPetCreate.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\utils\PetStoreTestBase.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\create\CreatePet.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\create\CreateUser.java
+C:\Users\kalekseenko\RestAssuredPetShop\src\test\java\utils\PetData.java

@@ -4,8 +4,6 @@ import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.testng.Assert;
 import rest.model.request.order.Order;
-
-import java.util.List;
 import java.util.Map;
 
 public class OrderValidatableResponse {
@@ -33,7 +31,7 @@ public class OrderValidatableResponse {
 
     public OrderValidatableResponse checkOrder(Order expected) {
         Map<String, Object> responseMap = response.jsonPath().getMap("$");
-        Assert.assertEquals(6, responseMap.size(), "Количество параметров в ответе должно быть 6");
+        Assert.assertEquals(4, responseMap.size(), "Количество параметров в ответе должно быть 4");
         Assert.assertEquals(model.getQuantity(), expected.getQuantity(), "Url does not match");
         Assert.assertEquals(model.getShipDate(), expected.getShipDate(), "Name does not match");
         Assert.assertEquals(model.getPetId(), expected.getPetId(), "Category does not match");
