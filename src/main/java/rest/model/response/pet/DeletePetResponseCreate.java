@@ -2,7 +2,7 @@ package rest.model.response.pet;
 
 import lombok.*;
 import lombok.experimental.Accessors;
-import rest.model.request.pet.PetOrder;
+import rest.model.request.pet.PetCreate;
 
 
 @Accessors(chain = true)
@@ -12,12 +12,15 @@ import rest.model.request.pet.PetOrder;
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
-public class DeletePetResponseOrder extends PetOrder {
+public class DeletePetResponseCreate extends PetCreate {
+
+    @EqualsAndHashCode.Exclude
     private int code;
     private String type;
     private String message;
 
-    }
+
+}
 
 
 

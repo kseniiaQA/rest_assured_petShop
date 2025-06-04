@@ -8,7 +8,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PetOrder {
+public class PetCreate {
 
     private long id;
     private Category category;
@@ -17,19 +17,19 @@ public class PetOrder {
     private List<Tag> tags;
     private String status;
 
-    public PetOrder(PetOrder petOrder) {
-        this.id = petOrder.id;
-        this.category = petOrder.category;
-        this.name = petOrder.name;
-        this.photoUrls = petOrder.photoUrls;
-        this.tags = petOrder.tags;
-        this.status = petOrder.status;
+    public PetCreate(PetCreate petCreate) {
+        this.id = petCreate.id;
+        this.category = petCreate.category;
+        this.name = petCreate.name;
+        this.photoUrls = petCreate.photoUrls;
+        this.tags = petCreate.tags;
+        this.status = petCreate.status;
     }
 
 
 
-    public static PetOrder defaultOf() {
-        return new PetOrder(
+    public static PetCreate defaultOf() {
+        return new PetCreate(
                 0,
                 new Category(0, "string"),
                 "doggie",

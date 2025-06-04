@@ -2,7 +2,7 @@ package rest.model.response.pet;
 
 import lombok.*;
 import lombok.experimental.Accessors;
-import rest.model.request.pet.PetOrder;
+import rest.model.request.pet.PetCreate;
 
 @Accessors(chain = true)
 @Setter
@@ -11,7 +11,7 @@ import rest.model.request.pet.PetOrder;
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
-public class PetOrderResponse extends PetOrder {
+public class PetCreateResponse extends PetCreate {
 
     private long id;
 

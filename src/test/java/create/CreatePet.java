@@ -4,34 +4,34 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import rest.client.TestClient;
-import rest.model.request.pet.PetOrder;
+import rest.model.request.pet.PetCreate;
 import rest.model.response.pet.PetValidatableResponse;
 
-public class CreatePetTestOrder {
+public class CreatePet {
 
     @Test(dataProvider = "createPets")
-    public void testCreatePet(PetOrder petOrder) throws InterruptedException {
+    public void testCreatePet(PetCreate petCreate) throws InterruptedException {
         TestClient client = new TestClient();
-        PetValidatableResponse response = client.create(petOrder)
+        PetValidatableResponse response = client.createPet(petCreate)
                 .checkStatusCode(200)
                 .checkIdNotNull()
-                .checkPet(petOrder);
+                .checkPet(petCreate);
         Thread.sleep(5000);
         long petId = response.getId();
         Thread.sleep(5000);
-        client.read(petId)
+        client.readPet(petId)
                 .checkStatusCode(200)
                 .checkId(petId)
-                .checkPet(petOrder);
+                .checkPet(petCreate);
     }
 
     @DataProvider
     public Object[][] createPets() {
         return new Object[][] {
-                { PetOrder.defaultOf()},
-                { PetOrder.defaultOf().setCategory(new PetOrder.Category(0, null))},
-                { PetOrder.defaultOf().setName(RandomStringUtils.randomAlphabetic(256)) },
-                { PetOrder.defaultOf().setName(RandomStringUtils.randomAlphabetic(0)) },
+                { PetCreate.defaultOf()},
+                { PetCreate.defaultOf().setCategory(new PetCreate.Category(0, null))},
+                { PetCreate.defaultOf().setName(RandomStringUtils.randomAlphabetic(256)) },
+                { PetCreate.defaultOf().setName(RandomStringUtils.randomAlphabetic(0)) },
         };
     }
 }

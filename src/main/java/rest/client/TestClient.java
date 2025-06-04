@@ -8,7 +8,7 @@ import io.restassured.specification.RequestSpecification;
 import lombok.AllArgsConstructor;
 import props.TestConfig;
 import rest.model.request.order.Order;
-import rest.model.request.pet.PetOrder;
+import rest.model.request.pet.PetCreate;
 import rest.model.request.pet.PetUpdateRequest;
 import rest.model.response.order.OrderValidatableResponse;
 import rest.model.response.pet.DeletedPetValidatableResponse;
@@ -64,32 +64,24 @@ public class TestClient {
                 .body(body); // Устанавливаем тело запроса
     }
 
-    public PetValidatableResponse create(PetOrder petOrder) {
-        Response response = getRequestSpec(petOrder).when()
-                .post("/petOrder/");
-
-        // Логируем статус и тело ответа для диагностики
+    public PetValidatableResponse createPet(PetCreate petCreate) {
+        Response response = getRequestSpec(petCreate).when()
+                .post("/pet/");
         System.out.println("Response Status Code: " + response.getStatusCode());
         System.out.println("Response Body: " + response.getBody().asString());
-
         response.then().log().all();
-
-        // Проверяем, что Content-Type соответствует ожидаемому
         if (!response.getContentType().contains("application/json")) {
             throw new IllegalStateException("Unexpected Content-Type: " + response.getContentType());
         }
-
         return new PetValidatableResponse(response);
     }
 
-    public OrderValidatableResponse create(Order order) {
+    public OrderValidatableResponse createOrder(Order order) {
         Response response = getRequestSpec(order).when()
                 .post("/store/order");
-
         System.out.println("Response Status Code: " + response.getStatusCode());
         System.out.println("Response Body: " + response.getBody().asString());
         response.then().log().all();
-
         if (!response.getContentType().contains("application/json")) {
             throw new IllegalStateException("Unexpected Content-Type: " + response.getContentType());
         }
@@ -97,14 +89,22 @@ public class TestClient {
         return new OrderValidatableResponse(response);
     }
 
-    public PetValidatableResponse update(long id, PetUpdateRequest petUpdateRequest) {
+    public PetValidatableResponse updatePet(long id, PetUpdateRequest petUpdateRequest) {
         Response response = getRequestSpecForUpdate(petUpdateRequest).when()
                 .post("/pet/{id}", id);
         response.then().log().all();
         return new PetValidatableResponse(response);
     }
 
-    public UploadImageResponse updateImage(long petId, File imageFile, String additionalMetadata) {
+
+    public PetValidatableResponse putPet(long id, PetCreate petCreate) {
+        Response response = getRequestSpec(petCreate).when()
+                .put("/pet/", id);
+        response.then().log().all();
+        return new PetValidatableResponse(response);
+    }
+
+    public UploadImageResponse updateImageForPet(long petId, File imageFile, String additionalMetadata) {
         Response response = getRequestSpec()
                 .multiPart("file", imageFile)
                 .multiPart("additionalMetadata", additionalMetadata)
@@ -116,7 +116,7 @@ public class TestClient {
         return response.as(UploadImageResponse.class);
     }
 
-    public PetValidatableResponse read(long id) {
+    public PetValidatableResponse readPet(long id) {
         Response response = getRequestSpec().when().
                 get("/pet/{id}", id);
 
@@ -142,13 +142,13 @@ public class TestClient {
     }
 
 
-    public void delete(long id) {
+    public void deletePet(long id) {
         Response getResponse = getRequestSpec()
                 .when()
-                .get("/pet/{id}", id);
+                .delete("/pet/{id}", id);
 
         if (getResponse.getStatusCode() == 404) {
-            throw new IllegalArgumentException("PetOrder not found with id: " + id);
+            throw new IllegalArgumentException("PetCreate not found with id: " + id);
         }
         Response deleteResponse = getRequestSpec()
                 .when()
